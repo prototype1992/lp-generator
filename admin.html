@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Генератор Лендингов - убийца Wix от Дениса Алексеевича Бугарчева</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="src/static/js/libs/magnific/magnific-popup.css">
+    <link rel="stylesheet" href="src/static/js/libs/slick/slick/slick.css">
+    <link rel="stylesheet" href="src/static/css/normalize.css">
+    <link rel="stylesheet" href="src/static/css/main.css">
+</head>
+<body>
+
+<div class="admin-wrapper">
+
+    <h1 class="admin-wrapper__title">Генератор Лендингов</h1>
+
+    <form class="admin-form" method="post" action="http://localhost:3003/generate_lp" enctype="multipart/form-data">
+        <div class="admin-form__item">
+            <label>
+                <span>Название страницы</span>
+                <input type="text" name="adminTitle" placeholder="Название страницы" required>
+            </label>
+        </div>
+        <div class="admin-form__item">
+            <label>
+                <span>Цена</span>
+                <input type="number" value="0" min="0" name="adminPrice" required>
+            </label>
+        </div>
+        <div class="admin-form__item">
+            <label>
+                <span>Скидка</span>
+                <input type="number" value="0" min="0" name="adminDiscount" required>
+            </label>
+        </div>
+        <div class="admin-form__item">
+            <label>
+                <span>Выберите фон</span>
+                <input type="file" name="adminBg" required>
+            </label>
+        </div>
+        <div class="admin-form__item">
+            <label>
+                <span>Выберите шапку</span>
+                <input type="file" name="adminHeader" required>
+            </label>
+        </div>
+        <div class="admin-form__item">
+            <label>
+                <span>Выберите верхний баннер</span>
+                <input type="file" name="adminTopBanner" required>
+            </label>
+        </div>
+        <div class="admin-form__item">
+            <label>
+                <span>Выберите картинку контента</span>
+                <input type="file" name="adminContent" required>
+            </label>
+        </div>
+        <div class="admin-form__item">
+            <label>
+                <span>Выберите нижний баннер</span>
+                <input type="file" name="adminBottomBanner" required>
+            </label>
+        </div>
+        <div class="admin-form__item">
+            <label>
+                <span>Слайды</span>
+                <input type="file" name="adminSlide1" required>
+                <input type="file" name="adminSlide2" required>
+            </label>
+        </div>
+        <!--<div class="admin-form__item">-->
+            <!--<label>-->
+                <!--<span>Выберите Слайдеры</span>-->
+                <!--<div class="admin-form__slides js-slides"></div>-->
+                <!--<button class="js-add-slide" type="button">+ Добавить слайд</button>-->
+            <!--</label>-->
+        <!--</div>-->
+
+        <div class="admin-form__btn-group">
+            <button class="admin-form__btn btn-orange">Создать Лендинг</button>
+        </div>
+    </form>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+//        var number = 0;
+//        $('.js-add-slide').on('click', function (e) {
+//            e.preventDefault();
+//            $('.js-slides').append(
+//                '<input type="file" name="admin-slider-'+number+'"" required>'
+//            );
+//            number++;
+//        });
+
+        // submit
+//        $('.admin-form').on('submit', function (e) {
+//            e.preventDefault();
+//            console.log($(this).serialize());
+//        })
+    });
+</script>
+</body>
+</html>
